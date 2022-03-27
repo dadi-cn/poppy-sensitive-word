@@ -1,15 +1,17 @@
 <?php
 
-namespace Poppy\SensitiveWord\Http\Form;
+namespace Poppy\SensitiveWord\Http\MgrPage;
 
 use Poppy\Framework\Classes\Resp;
-use Poppy\MgrApp\Classes\Widgets\FormWidget;
+use Poppy\MgrPage\Classes\Widgets\FormWidget;
 use Poppy\SensitiveWord\Action\Word;
+use function input;
 
 class FormSensWordEstablish extends FormWidget
 {
 
-    protected string $title = '添加敏感词';
+    public $ajax = true;
+
 
     public function handle()
     {
@@ -17,7 +19,7 @@ class FormSensWordEstablish extends FormWidget
         if (!$Word->establish(input())) {
             return Resp::error($Word->getError());
         }
-        return Resp::success('操作成功', 'motion|grid:reload');
+        return Resp::success('操作成功', '_top_reload|1');
     }
 
     public function form()

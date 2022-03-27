@@ -1,15 +1,17 @@
 <?php
 
-namespace Poppy\SensitiveWord\Http\Lists\Backend;
+namespace Poppy\SensitiveWord\Http\MgrPage;
 
 use Closure;
 use Poppy\Framework\Exceptions\ApplicationException;
-use Poppy\System\Classes\Grid\Column;
-use Poppy\System\Classes\Grid\Displayer\Actions;
-use Poppy\System\Classes\Grid\Filter;
-use Poppy\System\Classes\Grid\Tools\ActionButton;
-use Poppy\System\Classes\Grid\Tools\BaseButton;
-use Poppy\System\Http\Lists\ListBase;
+use Poppy\MgrPage\Classes\Grid\Column;
+use Poppy\MgrPage\Classes\Grid\Displayer\Actions;
+use Poppy\MgrPage\Classes\Grid\Filter;
+use Poppy\MgrPage\Classes\Grid\ListBase;
+use Poppy\MgrPage\Classes\Grid\Tools\ActionButton;
+use Poppy\MgrPage\Classes\Grid\Tools\BaseButton;
+use function route;
+use function route_url;
 
 class ListSensitiveWord extends ListBase
 {

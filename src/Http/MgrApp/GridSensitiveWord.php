@@ -1,6 +1,6 @@
 <?php
 
-namespace Poppy\SensitiveWord\Http\Grid;
+namespace Poppy\SensitiveWord\Http\MgrApp;
 
 use Poppy\MgrApp\Classes\Grid\Column\Render\ActionsRender;
 use Poppy\MgrApp\Classes\Grid\Column\Render\Render;
@@ -8,6 +8,8 @@ use Poppy\MgrApp\Classes\Grid\Tools\Actions;
 use Poppy\MgrApp\Classes\Widgets\FilterWidget;
 use Poppy\MgrApp\Classes\Widgets\TableWidget;
 use Poppy\MgrApp\Http\Grid\GridBase;
+use function route;
+use function route_url;
 
 class GridSensitiveWord extends GridBase
 {
