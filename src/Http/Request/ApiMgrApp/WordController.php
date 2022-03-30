@@ -1,6 +1,6 @@
 <?php
 
-namespace Poppy\SensitiveWord\Http\Request\Api\Backend;
+namespace Poppy\SensitiveWord\Http\Request\ApiMgrApp;
 
 use Exception;
 use Illuminate\Http\JsonResponse;

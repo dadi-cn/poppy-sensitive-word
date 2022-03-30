@@ -3,7 +3,7 @@
 use Illuminate\Routing\Router;
 
 Route::group([
-    'namespace' => 'Poppy\SensitiveWord\Http\Request\Api\Backend',
+    'namespace' => 'Poppy\SensitiveWord\Http\Request\ApiMgrApp',
 ], function (Router $router) {
     $router->any('/', 'WordController@index')
         ->name('py-sensitive-word:api-backend.word.index');
